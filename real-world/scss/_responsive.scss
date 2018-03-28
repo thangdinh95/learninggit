@@ -1,0 +1,179 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 95%;
+  }
+  .navbar-brand>img {
+    max-width: 270px;
+    margin-top: 5px;
+  }
+
+  #navbar .navbar-nav > li > a {
+    font-size: 17px;
+  }
+
+  .fullbox-3 .inner-box {
+    min-height: 450px;
+  }
+
+  .fullbox-6 .organization-chart .media-box {
+    overflow: auto;
+  }
+
+  .fullbox-6 .organization-chart img {
+    max-width: inherit;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar-brand>img {
+    max-width: 250px;
+    margin-top: 10px;
+  }
+
+  #navbar .navbar-nav > li > a {
+    font-size: 16px;
+  }
+
+  .fullbox-1 {
+    background-position: top right;
+  }
+
+  .fullbox-1 .content-box h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .fullbox-3 .inner-box h3 {
+  	padding: 0 10px;
+  	font-size: 18px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    width: 100%;
+  }
+  .fullbox-3 .inner-box {
+    min-height: 420px;
+  }
+
+  #navbar .navbar-nav > li > a {
+    padding: 0 10px;
+  }
+  .fullbox-1 .content-box h2 {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .fullbox-1 .content-box p {
+    font-size: 18px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar-brand>img {
+    max-width: 180px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  #header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  #navbar {
+    float: none;
+  }
+  .navbar-toggle {
+    margin-top: 27px;
+    .icon-bar {
+      background-color: $color-orange;
+      height: 4px;
+    }
+  }
+
+  .navbar-brand>img {
+    max-width: 300px;
+    margin-top: 5px;
+  }
+  
+  .navbar-nav {
+    border-top: 3px solid $color-orange;
+    padding: 10px 0;
+  }
+
+  #navbar .navbar-nav > li > a {
+    height: 36px;
+    line-height: 36px;
+  }
+
+  #mainbox-1 {
+    padding: 80px 0;
+  }
+
+  .title-box:after {
+    max-width: 100%;
+  }
+
+  .title-box {
+    margin-bottom: 30px;
+  }
+
+  
+
+  #mainbox-2 {
+    padding: 30px 0;
+  }
+
+  .fullbox-2 {
+    background: none;
+  }
+
+  .fullbox-2 .content-box h3 {
+    font-size: 24px;
+  }
+
+  .fullbox-2 .full-box .new-value h2 {
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 60px;
+  }
+
+  .fullbox-2 .full-box .media-box {
+    overflow: auto;
+  }
+
+  .fullbox-2 .full-box .media-box img {
+    max-width: inherit;
+  }
+
+  .fullbox-3 .main-activities {
+    background: none;
+  }
+
+  .fullbox-3 .inner-box {
+    min-height: 300px;
+    height: auto;
+  }
+
+  .fullbox-4 {
+    padding: 0px 0 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar-brand>img {
+    max-width: 270px;
+    margin-top: 8px;
+  }
+
+  .fullbox-2 .content-box h3 {
+    font-size: 20px;
+  }
+}

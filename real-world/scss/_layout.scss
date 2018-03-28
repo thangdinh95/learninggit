@@ -1,0 +1,41 @@
+#header {
+  height: 90px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  background: $color-white;
+}
+
+#mainbody {
+  margin-top: 91px;
+}
+
+.full-mainbox {
+  position: relative;
+}
+#mainbox-1 {
+  padding: 120px 0 160px;
+}
+
+#mainbox-2 {
+  padding: 60px 0 30px;
+}
+
+.title-box {
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 60px;
+  line-height: 48px;
+  padding-bottom: 20px;
+  &:after {
+    content: "";
+    width: 500px;
+    height: 10px;
+    background: url("../images/bg-line.png") 0 0 no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
