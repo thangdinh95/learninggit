@@ -1,0 +1,202 @@
+/**TOPNAV**/
+.topnav {
+    background-color: $color_topnav;
+    color: $color_grey;
+    
+    .nav-item {
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .opentime {
+            padding: 0 20px 0 3px;
+            word-spacing: 3px;
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .nav-link {
+        border-left: 1px solid $color_topnav-border;
+        font-size: 11px;
+        color: $color_grey;
+        transition: 0.4s;
+
+        &:hover {
+            color: $color_green;
+        }
+    }
+
+    ul li:last-child,
+    ul li:nth-child(5) {
+        .nav-link {
+            border-right: 1px solid $color_topnav-border;
+        }
+    }
+}
+/**BANNER **/
+.banner {
+    background: url('../images/topnavbanner.png');
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .bannerleft {
+        position: relative;
+
+        .logo,
+        .logo2 {
+            position: absolute;
+            top: 0;
+        }
+
+        .logo2 {
+            left: 61%;
+            top: -65px;
+        }
+    }
+
+    .bannerright {
+        
+        .banner-search {
+            float: left;
+        }
+
+        .banner-cart {
+            display: inline-block;
+            padding: 22px 0 0 147px;
+            i {
+                margin-right: 5px;
+            }
+        }
+        .support {
+            color: $color_support;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            padding-left: 25%;
+        }
+        .input-group {
+            width: 128%;
+            padding-left: 32%;
+            margin-top: 10px;
+
+            .form-control{
+                border-top-left-radius: 50px;
+                border-bottom-left-radius: 50px;
+                background-color: $color_bg;
+                border-color:  $color_bg;
+                color: $color_green;
+                padding: 10px 33px;
+
+                &::placeholder {
+                    color: $color_search-text;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 14px;
+                }
+            }
+
+            .btn {
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+                background-color: $color_bg;
+                color: $color_grey;
+                position: relative;
+                padding: 10px 20px;
+
+                &:before {
+                    content: ' ';
+                    position: absolute;
+                    width: 1px;
+                    height: 35px;
+                    background-color: $color_search;
+                    left: 0px;
+                    top: 4px;
+                }
+            }
+        }
+    }
+}
+
+/**NAVBAR **/
+.main-navbar {
+    .navbar {
+        background-color: $color_btn;
+        padding: 0;
+
+        .navbar-brand {
+            color: $color_bg;
+        }
+
+        .navbar-nav {
+            .nav-item {
+                transition: 0.4s;
+
+                &:hover {
+                    background-color: $color_hover;
+                    cursor: pointer;
+                }
+
+                .nav-link {
+                    color: $color_bg;
+                    padding:15px 20px;
+                }
+                
+                .dropdown-menu {
+                    // -webkit-box-shadow: 0px 0px 14px 0px rgba(50, 50, 50, 0.75);
+                    // -moz-box-shadow:    0px 0px 14px 0px rgba(50, 50, 50, 0.75);
+                    // box-shadow:         0px 0px 14px 0px rgba(50, 50, 50, 0.75);
+                    border-radius: 0;
+                    top: 97%;
+                    -webkit-box-shadow: 2px 4px 14px 0px rgba(50, 50, 50, 0.75);
+                    -moz-box-shadow:    2px 4px 14px 0px rgba(50, 50, 50, 0.75);
+                    box-shadow:         2px 4px 14px 0px rgba(50, 50, 50, 0.75);
+                    background-color: $color_topnav;
+                    .dropdown-item {
+                        color: $color_bg;
+                        &:hover {
+                            background-color: $color_hover;
+                            color: $color_grey;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**SLIDE **/
+.slide {
+    .carousel-indicators {
+        li {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: $color_bg;
+        }
+
+        .active {
+            background-color: $color_green;
+        }
+    }
+}
+
+/**TOP PRODUCT **/
+.topproduct{
+    padding-top: 50px;
+}
+
+/**OTHER PRODUCT **/
+
+/**ADS **/
+
+/**NEW PRODUCT **/
+
+/**NEWS **/
+
+/**NEWSLETTER **/
+
+/**FOOTER **/

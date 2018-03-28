@@ -1,0 +1,85 @@
+.price--red {
+    color: $color_red;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif; 
+}
+
+.price--cross {
+    color: $color_pricecross;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    &:before {
+        content: ' ';
+        position: absolute;
+        width: 99%;
+        height: 1px;
+        background-color: $color_pricecross;
+        top: 12px;
+        left: 0.5px;
+    }
+}
+
+.circle--red,
+.circle--green {
+    background-color: $color_red;
+    border: 1px solid $color_red;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 14px;
+    color: $color_bg;
+}
+
+.circle--green{
+    background-color: $color_green;
+    border: 1px solid $color_green;
+}
+
+.maintitle {
+    color: $color_green;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 37px;
+
+    &:before {
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $color_border;
+        bottom: -14px;
+    }
+
+    &:after {
+        content: ' ';
+        position: absolute;
+        height: 3px;
+        background-color: $color_btn;
+        bottom: -15px;
+        left: 0;
+    }
+}
+.maintitle--topproduct,
+.maintitle--bestseller,
+.maintitle--saleproduct {
+    &:after {
+        width: 12%;
+    }
+}
+
+
+.maintitle--newproduct,
+.maintitle--news {
+    &:after {
+        width: 10%;
+    }
+}
+
